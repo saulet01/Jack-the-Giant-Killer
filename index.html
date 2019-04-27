@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Assignment 3: Once Upon a Time</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="90">
+
+  <!--  Navbar. Adapted from: https://getbootstrap.com/docs/4.3/components/navbar/ -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="https://wustl.edu/">Once Upon a Time: Jack the Giant Killer</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#bubbleChart">Bubble Chart</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#forceLayout">Network Chart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!--  /Navbar -->
+
+  <!--  Jumbotron. Adapted from: https://getbootstrap.com/docs/4.3/components/jumbotron/-->
+  <div class="jumbotron jumbotron-fluid shadow-lg">
+    <div class="container text-center">
+      <h1 class="display-3 jack wow fadeInDown" data-wow-delay="0.3s">Jack the Giant Killer</h1>
+      <p class="lead infoSt wow bounceIn" data-wow-delay="1s">Saulet Yskak &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; saulet@wustl.edu  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;467511</p>
+    </div>
+  </div>
+  <!--  /Jumbotron-->
+
+    <div class="row" id="bubbleChart">
+      <div class="col-12 col-lg-7">
+        <svg width="850" height="700" id="bubble1"></svg>
+      </div>
+        <div class="col-12 col-lg-4 mr-5 mt-5">
+        <h1 class="display-4 text-center mb-5 bubbleText">Bubble Chart</h1>
+        <p class="lead text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In bubble chart visualization, each circle (bubble) represent each word, and importance of each bubble is shown with font size and color. The size of the bubble corresponds to the number of times the occurrence word in the fairy tale. Basically, the more a specific word appears in the text or data, the bigger the circle appears in the bubble chart. For sake of clarity, the filter method have been applied in order to show only 45 the most frequently used words. As for “Jack the Giant Killer” example, the most frequently used words are “Jack”, “Giant”, “castle”, “head’ and etc. By doing so, having no look at the title, you can get an idea what it is going to be about. Additionally, hover, tooltip tools and drag interactions have been added for making the chart more engaging, creative and interactive. </p>
+      </div>
+    </div>
+    <div class="row shadow-lg" id="forceLayout">
+      <div class="col-12 col-lg-4 mt-5 ml-5">
+        <h1 class="display-4 text-center mb-5 bubbleText">Network Chart</h1>
+        <p class="lead text-justify">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In network visualization, each node represents each character, and links represent relationship between characters and how they related to each other. Basically, networks help us see how entities in fairy tale are connected to one another. By looking at all these part interconnected gives more realistic and informative insights. Moreover, network visualization allow us to focus on understanding the dynamics for nodes and links, and generally for all overall systems itself. In “Jack the Gian Killer” example, without having looked at the title, if you look at the visualization you can explore and get an idea who is a main character and who would be his/her enemies. In our case, Jack is the main character, while Gian Gallingatua is the Jack’s main enemy. </p>
+      </div>
+      <div class="col-12 col-lg-7 mt-3">
+        <svg width="800" height="700" id="character1"></svg>
+      </div>
+    </div>
+
+ <!-- Optional JavaScript -->
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+ <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+ <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ <script src="js/d3.min.js"></script>
+ <script src="js/bootstrap.min.js"></script>
+ <script src="data/app.js"></script>
+ <script src="js/bubble.js"></script>
+ <script src="data/taleCharacters.js"></script>
+ <script src="js/wow.min.js"></script>
+ <script src="js/characters.js"></script>
+</body>
+</html>

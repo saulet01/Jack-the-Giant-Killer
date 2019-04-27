@@ -1,0 +1,60 @@
+@font-face {
+  font-family: gloriaFont;
+  src: url(./Gloria.ttf);
+}
+
+.bubble2{
+  fill: #FEDE67;
+  transition-duration: .3s;
+  transition-property: fill;
+}
+
+.bubble2:hover{
+  fill: #E7905F;
+  font-weight: bold;
+}
+
+.textInside{
+ text-anchor: middle;
+}
+
+circle{
+  box-shadow: 10px 10px yellow;
+}
+
+.jumbotron{
+  background-image: url('../images/knight2.jpg');
+  background-size: cover;
+  height: 400px;
+}
+
+.jack{
+  color: #FEDE67;
+  font-family: gloriaFont;
+  font-size: 90px;
+  text-shadow: 1.5px 1px #E78F5F;
+}
+
+.infoSt{
+  color: #FEDE67;
+  margin-top: -15px;
+}
+
+.bubbleText{
+  color: #7D4628;
+}
+
+.navbar{
+  background-color: rgba(254, 222, 103, 0.9);
+}
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+.navbar a, .navbar ul{
+  color: #7D4628;
+}
+/* *{
+  cursor: url(../images/25.png), auto;
+} */
