@@ -1,4 +1,4 @@
-# Assignment 3: Once Upon a Time
+# Once Upon a Time Visualization
 
 ## I used external resources:
 
